@@ -71,26 +71,26 @@ export const constantRoutes: RouteRecordRaw[] = [
         component: () => import("@/views/unocss/index.vue"),
         name: "病害识别",
         meta: {
-          title: "病害识别",
+          title: "病害识别"
         }
       }
     ]
   },
-  {
-    path: "/info",
-    component: Layouts,
-    redirect: "/info/index",
-    children: [
-      {
-        path: "index",
-        component: () => import("@/views/info/index.vue"),
-        name: "病害防治信息",
-        meta: {
-          title: "病害防治信息",
-        }
-      }
-    ]
-  },
+  // {
+  //   path: "/info",
+  //   component: Layouts,
+  //   redirect: "/info/index",
+  //   children: [
+  //     {
+  //       path: "index",
+  //       component: () => import("@/views/info/index.vue"),
+  //       name: "病害防治信息",
+  //       meta: {
+  //         title: "病害防治信息",
+  //       }
+  //     }
+  //   ]
+  // },
   {
     path: "/ans",
     component: Layouts,
@@ -101,11 +101,41 @@ export const constantRoutes: RouteRecordRaw[] = [
         component: () => import("@/views/ans/index.vue"),
         name: "番茄病害智能问答",
         meta: {
-          title: "番茄病害智能问答",
+          title: "番茄病害智能问答"
         }
       }
     ]
   },
+  {
+    path: "/feedback",
+    component: Layouts,
+    redirect: "/feedback/index",
+    children: [
+      {
+        path: "index",
+        component: () => import("@/views/feedback/index.vue"),
+        name: "留言反馈",
+        meta: {
+          title: "留言反馈"
+        }
+      }
+    ]
+  },
+  {
+    path: "/help",
+    component: Layouts,
+    redirect: "/help/index",
+    children: [
+      {
+        path: "index",
+        component: () => import("@/views/help/index.vue"),
+        name: "源码下载",
+        meta: {
+          title: "源码下载"
+        }
+      }
+    ]
+  }
   // {
   //   path: "/link",
   //   meta: {
