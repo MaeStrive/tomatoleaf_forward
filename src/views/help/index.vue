@@ -27,8 +27,8 @@
         ><el-button round type="success" @click="download('SSD')">源码下载</el-button>
       </div>
       <div style="margin-top: 2%">
-        <span style="padding-right: 2%; color: #1b8bfa; font-family: 楷体; font-size: large">bert智能问答</span
-        ><el-button round type="success" @click="download('bert')">源码下载</el-button>
+        <span style="padding-right: 2%; color: #1b8bfa; font-family: 楷体; font-size: large">bert智能问答</span>
+        <el-button round type="success" @click="download('bert')">源码下载</el-button>
       </div>
     </div>
   </div>
